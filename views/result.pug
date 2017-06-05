@@ -1,0 +1,20 @@
+html
+    head
+        style 
+            include /css/styles.css
+    body
+        img.center-block(src=`/img/Netflix.png` style="width: 400px;")
+        div.well
+            h1.text-center= title
+            h4.text-center.small= release
+        p.text-center= message
+        div.well
+            if image !== " "
+                img.center-block(src=image)
+            else
+                img.center-block(src=`http://via.placeholder.com/350x150`)       
+        p= error
+        blockquote
+            p.text-center.quote The status code is: #{status}
+            a(href="/")
+                button.btn.btn-primary.center-block SEARCH AGAIN MY FRIEND

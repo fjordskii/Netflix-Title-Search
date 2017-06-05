@@ -1,0 +1,12 @@
+html
+    head
+        style 
+            include /css/styles.css
+    body
+        img.center-block(src=`/img/Netflix.png` style="width: 400px;")
+        h1.text-center Netflix Show Search!
+        form.text-center(method='POST' action='/result')
+          div.form-group
+            label(for='name') Show Title:
+            input#name.form-control.center-block(type='text', placeholder='Search my soul...' name='movie' style='width: 300px;')
+          button.btn.btn-primary.center-block(type='submit') SEARCH

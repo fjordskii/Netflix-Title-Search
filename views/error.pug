@@ -1,0 +1,13 @@
+html
+    head
+        style 
+            include /css/styles.css
+    body
+        img.center-block(src=`/img/Netflix.png` style="width: 400px;")
+        div.well
+            h1.text-center= error
+            h4.text-center.small Netflix ain't got that title, brotha. Search up another one.
+        blockquote
+            p.text-center.quote The status code is: #{status}
+            a(href="/")
+                button.btn.btn-primary.center-block SEARCH AGAIN MY FRIEND
